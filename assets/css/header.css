@@ -1,6 +1,96 @@
 .header{
     top: 0;
-    height: 60px;
-    width: 100%;
-    background-color: red;
+    height: 120px;
+    background-color: var(--color-app-1st);
 }
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    position: relative;
+}
+
+.header__top__left{
+
+}
+
+.header__top__left a{
+}
+
+.header__top__left a:hover{
+    color: var(--color-white-level1);
+}
+
+.header__top__right{
+   
+}
+
+.header__top__right__item{
+}
+
+.header__top__right__item:hover{
+    color: var( --color-white-level1);
+}
+
+
+.header__top__left__connect,
+.header__top__right__item,
+.header__top__left a{
+    font-size: 1.4em;
+    color: var(--color-white-level0);
+    text-decoration: none;
+    padding: 5px 8px;
+}
+
+.header__top--separate{
+    font-size: 16px;
+    color: var(--color-app-2nd);
+}
+
+.header__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__bottom__left{
+
+}
+
+.header__bottom__search{
+    display: flex;
+    
+}
+
+.header__bottom__search input{
+    width: 500px;
+    height: 40px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.header__bottom__search span{
+
+}
+
+.header__bottom__search a{
+
+}
+
+.header__bottom__search a button{
+    position: absolute;
+    cursor: pointer;
+    width: 34px;
+    height: 40px;
+    display: block;
+}
+
+.header__bottom__right{
+
+}
+
+.header__bottom__right a {
+    text-decoration: none;
+}
+

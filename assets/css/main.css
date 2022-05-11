@@ -1,6 +1,10 @@
-/* :root{
-
-} */
+:root{
+    --color-app-1st:#EE4D2D;   
+    --color-app-2nd:#f29d8c;   
+    --color-black-level0:#000;
+    --color-white-level0:#fff;
+    --color-white-level1:#e0dede;
+}
 
 *{
     box-sizing: inherit;
