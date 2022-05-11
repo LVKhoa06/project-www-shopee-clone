@@ -1,0 +1,29 @@
+/* :root{
+
+} */
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height:1.6rem ;
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif; 
+}
+
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-with{
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
