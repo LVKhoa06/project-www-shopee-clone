@@ -7,40 +7,50 @@
 .header__top{
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 6px;
     position: relative;
 }
 
 .header__top__left{
-
+    display: flex;
+    align-items: baseline;
 }
 
 .header__top__left a{
+    
+}
+
+
+
+.header__top__right{
+   
 }
 
 .header__top__left a:hover{
     color: var(--color-white-level1);
 }
 
-.header__top__right{
-   
-}
-
-.header__top__right__item{
-}
-
-.header__top__right__item:hover{
+.header__top__item:hover{
     color: var( --color-white-level1);
 }
 
-
-.header__top__left__connect,
-.header__top__right__item,
-.header__top__left a{
-    font-size: 1.4em;
+.header__top__item,
+.header__top__icon{
+    font-size: 1.4rem;
     color: var(--color-white-level0);
     text-decoration: none;
-    padding: 5px 8px;
+    padding: 5px 8px 10px 8px;
+}
+
+.header__top__icon{
+    font-size: 1.6rem;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 -8px;
+}
+
+.header__top__icon-connect{
+    margin-right: 10px;
 }
 
 .header__top--separate{
@@ -48,6 +58,162 @@
     color: var(--color-app-2nd);
 }
 
+.header__top__item--no-hover:hover{
+    color: var(--color-white-level0);
+}
+
+.header__qr{
+    position: absolute;
+    height: auto;
+    width: auto;
+    background-color:var(--color-white-level0);
+    padding: 5px;
+    top: 100%;
+    left: 20px;
+    border-radius: 2px;
+    display: none;
+}
+
+
+.header__top__item--qr:hover .header__qr{
+    display: block;
+}
+
+.header__qr__img{
+    cursor: grab;
+    margin-bottom: -8px;
+}
+
+.header__qr-apps{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 3px;
+}
+
+.header__qr-apps img{
+    height: 18px;
+}
+
+.header__top__item__qr{
+    position: relative;
+}
+
+.header__top__notify{
+    position: absolute;
+    top: 100%;
+    background-color: var(--color-white-level0);
+    z-index: 1;
+    right: 270px;
+    width: 400px;
+    border: 1px solid #D3D3D3;
+    transform-origin: calc(100% - 30px) top;
+    animation: headerTopNotify ease-in 0.3s ;
+    display: none;
+}
+
+.header__top__notify::before {
+    right: 5px;
+    top:-28px;
+    position: absolute;
+    content: "";
+    border-width:20px 25px ;
+    border-style:solid;
+    border-color: transparent transparent var(--color-white-level0) transparent;
+}
+
+.header__top__item--has-notify{
+    display: inline-block;
+}
+
+.header__top__item--has-notify:hover .header__top__notify{
+    display: block;
+}
+@keyframes headerTopNotify{
+    from {
+        transform: scale(0);
+        opacity: 0 ;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.header__top__notify header{
+    height: 38px;
+    background-color:var(--color-white-level0) ;
+}   
+
+.header__top__notify header h3{
+    color: #777;
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 38px;
+    margin-left: 12px;
+    user-select: none;
+}
+
+.header__top__notify__list-item{
+    
+}
+
+.header__top__notify__item--viewed{
+    background: rgba(238, 75, 43, 0.1);
+}
+
+.header__top__notify__item{
+    display: flex;
+    padding: 12px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.header__top__notify__item:hover{
+    background-color: #f3f3f3;
+}
+
+.header__top__notify__item img{
+    width: 50px;
+    object-fit: cover;
+
+}
+
+.header__top__notify__item__name{
+    margin-left: 10px;
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 600;
+    display: block;
+    line-height: 1.4rem;
+    margin-bottom: 4px;
+}
+
+.header__top__notify__item__sub-name{
+    margin-left: 10px;
+    font-size: 1.2rem;
+    color: #999;
+    font-weight: 200;
+    display: block;
+}
+
+.header__top__notify__item__all{
+    padding: 8px;
+    text-align: center;
+    border-top: 1px solid #ececec;
+}
+
+.header__top__notify__item__all a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--color-black-level0);
+    font-weight: 600;
+    padding: 6px 150px;
+}
+
+
+/* ------------------------- */
 .header__bottom{
     display: flex;
     justify-content: space-between;

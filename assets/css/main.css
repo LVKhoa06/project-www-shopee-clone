@@ -17,6 +17,10 @@ html{
     font-family:'Open Sans', sans-serif; 
 }
 
+img{
+    max-width: 100%;
+}
+
 .grid{
     width: 1200px;
     max-width: 100%;
@@ -31,3 +35,4 @@ html{
     display: flex;
     flex-wrap: wrap;
 }
+
