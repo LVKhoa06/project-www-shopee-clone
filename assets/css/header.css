@@ -36,14 +36,14 @@
 
 .header__top__item,
 .header__top__icon{
-    font-size: 1.4rem;
+    font-size: 14px;
     color: var(--color-white-level0);
     text-decoration: none;
     padding: 5px 8px 10px 8px;
 }
 
 .header__top__icon{
-    font-size: 1.6rem;
+    font-size: 16px;
     display: inline-flex;
     align-items: center;
     margin: 0 -8px;
@@ -149,7 +149,7 @@
     color: #777;
     margin: 0;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 13px;
     line-height: 38px;
     margin-left: 12px;
     user-select: none;
@@ -182,17 +182,17 @@
 
 .header__top__notify__item__name{
     margin-left: 10px;
-    font-size: 1.3rem;
+    font-size: 13px;
     color: #333;
     font-weight: 600;
     display: block;
-    line-height: 1.4rem;
+    line-height: 14px;
     margin-bottom: 4px;
 }
 
 .header__top__notify__item__sub-name{
     margin-left: 10px;
-    font-size: 1.2rem;
+    font-size: 12px;
     color: #999;
     font-weight: 200;
     display: block;
@@ -206,7 +206,7 @@
 
 .header__top__notify__item__all a{
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 13px;
     color: var(--color-black-level0);
     font-weight: 600;
     padding: 6px 150px;

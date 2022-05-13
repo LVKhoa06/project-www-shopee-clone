@@ -1,5 +1,41 @@
 .big__content{
     height:1000px;
     width: 100%;
-    background-color: yellow;
 }
+
+.big__content__container-left{
+    height: 100%;
+    width: 15%;
+}
+
+.big__content__container-left__nav{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white-level0);
+    padding: 20px;
+    margin: 20px;
+}
+
+.big__content__container-left__nav h3{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.big__content__container-left__nav-item{
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--color-black-level0);   
+    padding: 3px 0;
+    margin: 3px;
+}
+
+.big__content__container-left__nav-item--border-bottom{
+    border-bottom: 1px solid #e8e8e8;
+    width: 100%;
+}
+
+.big__content__container-left__nav-item:hover{
+    color: var(--color-app-1st);
+}
+
+

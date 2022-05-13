@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Document</title>
+    <title>Shopee Clone 🤣</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
 </head>
 
-<body>
+<body class="hide-vertical-scroll-bar">
     <div class="big">
         <header class="header">
             <div class="grid">
@@ -160,19 +160,23 @@
         </header>
 
         <div class="big__content">
-            <div class="big__content__container-left__nav">
-                <h3>DANH MỤC</h3>
-                <a href="">
-                    <span>Trang điểm mặt</span>
-                </a>
+            <div class="big__content__container-left">
+                <div class="big__content__container-left__nav">
+                    <h3>DANH MỤC</h3>
+                    <a class="big__content__container-left__nav-item big__content__container-left__nav-item--border-bottom"
+                        href="">
+                        <span>Trang điểm mặt</span>
+                    </a>
 
-                <a href="">
-                    <span>Trang điểm mắt</span>
-                </a>
+                    <a class="big__content__container-left__nav-item big__content__container-left__nav-item--border-bottom"
+                        href="">
+                        <span>Trang điểm mắt</span>
+                    </a>
 
-                <a href="">
-                    <span>Trang điểm môi</span>
-                </a>
+                    <a class="big__content__container-left__nav-item" href="">
+                        <span>Trang điểm môi</span>
+                    </a>
+                </div>
             </div>
 
             <div class="big__content__container-right">
@@ -181,7 +185,6 @@
                 </div>
 
                 <div class="big__content-section">
-
 
                 </div>
 
@@ -251,42 +254,100 @@
                 </div>
                 <div class="footer__list">
                     <a href="">
-                        <i></i>
+                        <i class="footer__icon__connect fa fa-facebook"></i>
                         <span>Facebook</span>
                     </a>
                     <a href="">
-                        <i></i>
+                        <i class="footer__icon__connect fa fa-instagram"></i>
                         <span>Instagram</span>
                     </a>
                     <a href="">
-                        <i></i>
+                        <i class="footer__icon__connect fa fa-linkedin"></i>
                         <span>Linkedin</span>
                     </a>
                 </div>
             </div>
 
-            <div class="footer__heading">
-                <h3>VÀO CỬA HÀNG TRÊN ỨNG DỤNG</h3>
-            </div>
-            <div class="footer__app">
-                <div class="footer__app__qr">
-                    <img src="" alt="">
+            <div class="footer__container__nav footer__container__nav__app">
+                <div class="footer__heading">
+                    <h3>VÀO CỬA HÀNG TRÊN ỨNG DỤNG</h3>
                 </div>
-                <div class="footer__app__link">
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
+                <div class="footer__app">
+                    <div class="footer__app__qr">
+                        <img src="https://f8ubuntu.online/assets/img/qr_code.png" alt="" />
+                    </div>
+                    <div class="footer__app__link">
+                        <a href="#">
+                            <img src="https://f8ubuntu.online/assets/img/google_play.png" alt="" />
+                        </a>
+                        <a href="#">
+                            <img src="https://f8ubuntu.online/assets/img/app_store.png" alt="" />
+                        </a>
+                    </div>
+
                 </div>
-
             </div>
-
         </footer>
+
+        <div id="id-footer__copyright" class="footer__copyright">
+        </div>
+        <script>document.getElementById('id-footer__copyright').innerText = `© ${(new Date()).getFullYear()} - Bản quyền thuộc về KhoaPC`;</script>
     </div>
 
-    
+    <div class="modal">
+
+        <div class="modal__overlay">
+
+        </div>
+
+        <div class="modal__body">
+            <div class="auth__form">
+                <div class="auth__form__header">
+                    <h3 class="auth__form__header__heading">Đăng kí</h3>
+                    <span class="auth__form__switch-btn">Đăng nhập</span>
+                </div>
+
+                <div class="auth__form__form">
+                    <div class="auth__form__group">
+                        <input type="text" class="auth__form__input" placeholder="Nhập email">
+                    </div>
+
+                    <div class="auth__form__group">
+                        <input type="password" class="auth__form__input" placeholder="Mật khẩu">
+                    </div>
+
+                    <div class="auth__form__group">
+                        <input type="password" class="auth__form__input" placeholder="Nhập lại mật khẩu">
+                    </div>
+                </div>
+                <div class="auth__form__aside">
+                    <p class="auth__form__policy-text">
+                        Bằng việc đăng kí bạn đã đồng ý với Shopee về
+                        <a class="auth__form__policy-link" href="">Điều khoản dịch vụ</a> &
+                        <a class="auth__form__policy-link" href="">Chính sách bảo mật</a>
+                    </p>
+                </div>
+                <div class="auth__form__controls">
+                    <button class="btn btn-back">TRỞ LẠI</button>
+                    <button class="btn btn--primary">ĐĂNG KÍ</button>
+                </div>
+                <div class="auth__form__socials">
+                    <a href="" class="btn btn--with-icon">
+                        <i class="fa fa-facebook-square"></i>
+                        Kết nối với Facebook
+                    </a>
+
+                    <a href="" class="btn btn--with-icon">
+                        <i class="fa fa-google"></i>
+                        Kết nối với Google
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal__inner">
+
+        </div>
+    </div>
 
 </body>
 
