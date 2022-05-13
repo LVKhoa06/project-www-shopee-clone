@@ -1,79 +1,129 @@
 .modal{
-
-}
-
-.modal__overlay{
-
-}
-
-.modal__body{
-    width: 500px;
-    height: 300px;
+    
 }
 
 .auth__form{
-
+    margin: 30px;
+    width: 500px;
+    height: auto;
+    margin: 30px 30px 20px 30px;
 }
 
 .auth__form__header{
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .auth__form__header__heading{
-
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .auth__form__switch-btn{
-
-}
-
-.auth__form__form{
-
-}
-
-.auth__form__group{
-
+    font-size: 14px;
+    color: var(--color-app-1st);
+    font-weight: 600;
+    cursor: pointer;
+    
 }
 
 .auth__form__input{
+    margin: 6px;
+    width: 96%;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 13px;
+    border: 1px solid var(--color-black-level2);
+    border-radius: 4px;
+    outline: none;
+}
 
+.auth__form__input:focus{
+    border: 1px solid;
+    border-color: var(--color-app-1st);
 }
 
 .auth__form__aside{
-
+    margin-top: 18px;
+    text-align: center;
 }
 
 .auth__form__policy-text{
-
+    padding: 10px;
 }
 
 .auth__form__policy-link{
-
+    text-decoration: none;
+    color: var(--color-app-1st);
 }
 
 .auth__form__controls{
-
+    margin: 50px 0 20px 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .btn-back{
-
-}
-
-.btn--primary{
-
+    margin-right: 10px;
 }
 
 .auth__form__socials{
+    background-color: var(--color-white-level1);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 36px ;
+    border-radius: 0 0 4px 4px;
+}
 
+.btn.btn--primary:hover{
+    background-color: rgba(238, 77, 45, 0.8);
 }
 
 .btn--with-icon{
-
+    width: 40%;
+    padding: 0 20px;
 }
 
-.modal__inner{
+.btn--with-icon--fb{
+    background-color: #1b74e4;
+    color: var(--color-white-level0);
+    
+}
 
+.btn--with-icon--fb:hover{
+    background: rgba(27, 116, 228, 0.7);
+}
+
+.btn--with-icon--google:hover{
+    background: rgb(248, 246, 246);
+}
+
+.auth__form__socials__icon{
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.auth__form__help{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth__form__help__link{
+    text-decoration: none;
+}
+
+.auth__form__help__space{
+    border-right: 1px solid var(--color-black-level2);
+    margin: 0 8px;
+}
+
+.auth__form__help__link__forgot{
+    color: var(--color-app-1st);
 }
 
 
-
+.auth__form__help__link__help{
+    color: var(--color-black-level0);
+}

@@ -53,10 +53,9 @@
 }
 
 .footer__copyright {
-    background-color: var(--color-black-level3);
+    background-color: var(--color-white-level1);
     padding: 10px 0;
     font-size: 0.95rem;
-
     display: flex;
     justify-content: center;
 }
