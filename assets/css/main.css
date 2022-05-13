@@ -30,6 +30,16 @@ body{
     background-color: #f5f5f5;
 }
 
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
 .grid{
     width: 1200px;
     max-width: 100%;
@@ -54,12 +64,15 @@ body{
     display: flex;
 }
 
-.modal__body{
+.modal__body{ 
+    --growth-from:0.6;
+    --growth-to:1;
     margin: auto;
     background-color: var(--color-white-level0);
     z-index: 1;
     position: relative;
     border-radius: 4px;
+    animation: growth linear 0.2s ;
 }
 
 .modal__overlay{
