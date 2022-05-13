@@ -11,7 +11,7 @@ img {
 /* Reset CSS ----------------------------------------- END */
 
 :root {
-    --color-app-1st:#EE4D2D;   
+    --color-app-1st:#f95130;   
     --color-app-2nd:#f29d8c;   
     --color-black-level0:#000;
     --color-black-level1:#666;
@@ -19,6 +19,8 @@ img {
     --color-black-level3:#ddd;
     --color-white-level0:#fff;
     --color-white-level1:#ebe8e8;
+    --header__top:34px;
+    --header__bottom:90px;
 }
 
 html {
@@ -61,7 +63,7 @@ body{
     right: 0;
     bottom: 0;
     left: 0;
-    display: flex;
+    display: flex;  
 }
 
 .modal__body{ 
