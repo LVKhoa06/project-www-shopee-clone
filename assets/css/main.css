@@ -12,7 +12,7 @@ img {
 
 :root {
     --color-app-1st:#f95130;   
-    --color-app-2nd:#f29d8c;   
+    --color-app-2nd:#e7ca5a;   
     --color-black-level0:#000;
     --color-black-level1:#666;
     --color-black-level2:#999;
@@ -116,7 +116,7 @@ body{
 }
 
 .btn:hover{
-    background-color: var(--color-black-level3);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .btn.btn--primary{
