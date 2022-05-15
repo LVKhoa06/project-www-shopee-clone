@@ -21,8 +21,9 @@ img {
     --color-white-level0:#fff;
     --color-white-level1:#ebe8e8;
     --color-white-level2:#f3f3f3;
-    --header__top:34px;
-    --header__bottom:90px;
+    --color-white-level3:#f5f5f5;
+    --header__top: 34px;
+    --header__bottom: 90px;
 }
 
 html {
@@ -31,7 +32,7 @@ html {
 }
 
 body{
-    background-color: #f5f5f5;
+    background-color: var(--color-white-level3);
 }
 
 @keyframes growth {

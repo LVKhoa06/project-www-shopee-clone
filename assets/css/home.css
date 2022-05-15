@@ -16,6 +16,7 @@
     background-color: var(--color-white-level0);
     padding: 20px;
     margin: 20px;
+    border-radius: 2px;
 }
 
 .big__content__container-left__nav h3{
@@ -59,6 +60,7 @@
     margin: 20px 0px;
     background-color: var(--color-white-level1);
     width: 96%;
+    border-radius: 2px;
 }
 
 .big__content__container-right__filter__heading{
@@ -113,7 +115,7 @@
     z-index: 3;
     display: none;
     margin-top: 0.5px;
-    
+    border-radius: 2px;
 }
 
 .big__content__container-right__filter__price:hover .big__content__container-right__filter__price__sub {
@@ -135,7 +137,7 @@
 .big-content__product-list {
     background-color: var(--color-white-level1);
     padding: 10px 0;
-
+    border-radius: 2px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -147,9 +149,10 @@
     width: calc(100%/5 - 20px);
     margin-bottom: 10px;
     border: solid 5px var(--color-app-1st);
-
+    border-radius: 2px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 .product-list__product[favorite="1"] .product-list__product__favorite {
     display: block;
@@ -229,3 +232,42 @@
     text-align: right;
 }
 /* List of products -------------------------------------------------------------------- END */
+
+
+.big__content__pages-quantity{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.big__content__pages-quantity__icon{
+    
+}
+
+.big__content__pages-quantity__item{
+    font-size: 20px;
+    padding: 2px 15px;
+    margin: 30px 10px;
+    border: none;
+    color: var(--color-black-level1);
+    background-color: var(--color-white-level3);
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.big__content__pages-quantity__item--select{
+    background-color: var(--color-app-1st);
+    color: var(--color-white-level0);
+}
+
+.big__content__pages-quantity__item:hover{
+    color: var(--color-app-1st);
+}
+
+.big__content__pages-quantity__item--select:hover{
+    color: var(--color-white-level0);
+}
+
+.big__content__pages-quantity__icon:hover{
+    color: var(--color-black-level1);
+}

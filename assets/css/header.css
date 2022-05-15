@@ -527,6 +527,7 @@
 .header__bottom__right__info__top h5 {
     font-size: 13px;
     color: var(--color-black-level0);
+    font-weight: 500;
 }
 
 .header__bottom__right__head__price {
@@ -562,7 +563,7 @@
 .header__bottom__right__head__remove {
     margin-right: 12px;
     color: var(--color-black-level0);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 
