@@ -2,7 +2,10 @@
     top: 0;
     height: auto;
     background-color: var(--color-app-1st);
-    /* position: fixed; */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 -1px 4px 2px var(--color-black-level2);
 }
 
 .header--pointer {
@@ -38,7 +41,6 @@
     color: var(--color-white-level0);
     text-decoration: none;
     padding: 0px 8px 0px 8px;
-    /* height: 36px; */
 }
 
 .header__top__item--qr{
@@ -59,7 +61,7 @@
 
 .header__top--separate {
     font-size: 16px;
-    color: var(--color-app-2nd);
+    color: var(--color-app-3rd);
 }
 
 .header__top__item--no-hover:hover {
@@ -491,7 +493,6 @@
     padding: 8px 0 12px 12px;
 }
 
-.header__bottom__right__list-item {}
 
 .header__bottom__right__item {
     display: flex;

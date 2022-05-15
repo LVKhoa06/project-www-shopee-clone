@@ -2,7 +2,7 @@
     background-color: white;
     padding: 20px 0;
     border-top: solid 5px var(--color-app-1st);
-
+    position: relative;
     display: flex;
     justify-content: center;
 }
