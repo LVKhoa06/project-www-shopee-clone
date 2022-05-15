@@ -1,12 +1,12 @@
 .big__content{
     height:1000px;
-    width: 100%;
+    width: 96%;
     display: inline-flex;
 }
 
 .big__content__container-left{
     height: 100%;
-    width: 15%;
+    width: 20%;
 }
 
 .big__content__container-left__nav{
@@ -47,11 +47,11 @@
 
 .big__content__container-right__filter{
     display: inline-flex;
+    align-items: center;
     padding: 20px;
     margin: 20px 0px;
     background-color: var(--color-white-level1);
-    width: 100%;
-    height: 40px;
+    width: 96%;
 }
 
 .big__content__container-right__filter__heading{
@@ -146,6 +146,7 @@
 
 .product-list__product__like {
     cursor: pointer;
+    line-height: 1.5;
 }
 .product-list__product__like:hover {
     opacity: 0.8;

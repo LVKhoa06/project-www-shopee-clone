@@ -23,6 +23,7 @@
     align-items: baseline;
 }
 
+
 .header__top__left a:hover {
     color: var(--color-white-level1);
 }
@@ -38,6 +39,11 @@
     text-decoration: none;
     padding: 0px 8px 0px 8px;
     /* height: 36px; */
+}
+
+.header__top__item--qr{
+    padding-bottom: 15px;
+    cursor: pointer;
 }
 
 .header__top__icon {
