@@ -31,11 +31,13 @@
 }
 
 .big__content__container-left__nav-item{
+    position: relative;
     font-size: 13px;
     text-decoration: none;
     color: var(--color-black-level0);   
     padding: 3px 0;
     margin: 3px;
+    transition: right linear 0.2s;
 }
 
 .big__content__container-left__nav-item--border-bottom{
@@ -45,6 +47,7 @@
 
 .big__content__container-left__nav-item:hover{
     color: var(--color-app-1st);
+    right: -4px;
 }
 
 
@@ -125,13 +128,60 @@
 .big__content__container-right__filter__price__sub span{
     color: var(--color-black-level1);
     margin-left: 12px;
-    font-size: 12px;
+    font-size: 13px;
     cursor: pointer;
 }
 
 .big__content__container-right__filter__price__sub span:hover{
     color: var(--color-app-1st);
 }
+
+.big__content__filter__quantity{
+    margin-left: 102px;
+}
+
+.big__content__filter__quantity span{
+    font-size: 14px;
+}
+
+.big__content__filter__quantity--pick{
+    color: var(--color-app-1st);
+}
+
+.big__content__filter__quantity--space{
+
+}
+
+.big__content__filter__quantity--number{
+
+}
+
+.big__content__filter__quantity button{
+    padding: 8px 15px;
+    border-radius: 2px;
+    background-color: var(--color-white-level0);
+    border: 1.2px solid rgba(0, 0, 0, 0.18);
+    
+}   
+
+.big__content__filter__quantity__button__left{
+    margin-left: 8px;
+}
+
+.big__content__filter__quantity__icon-left{
+    color: var(--color-black-level3);
+    
+}
+
+.big__content__filter__quantity__button__right{
+    cursor: pointer;
+    margin-left: -3.6px;
+}
+
+.big__content__filter__quantity__button__right:hover{
+    background-color: var(--color-white-level3);
+}
+
 
 /* List of products -------------------------------------------------------------------- START */
 .big-content__product-list {
@@ -153,7 +203,14 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    transition: top linear;
 }
+
+.product-list__product:hover{
+    top:-5px;
+}
+
+
 .product-list__product[favorite="1"] .product-list__product__favorite {
     display: block;
 }
@@ -245,7 +302,7 @@
 }
 
 .big__content__pages-quantity__item{
-    font-size: 20px;
+    font-size: 18px;
     padding: 2px 15px;
     margin: 30px 10px;
     border: none;

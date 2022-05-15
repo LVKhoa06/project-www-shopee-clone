@@ -533,7 +533,7 @@
 .header__bottom__right__head__price {
     margin-left: calc(100% - 231px);
     color: var(--color-app-1st);
-    font-weight: 600;
+
 }
 
 .header__bottom__right__head__multiply{
