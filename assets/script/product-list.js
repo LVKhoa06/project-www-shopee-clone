@@ -1,4 +1,4 @@
-const CONST_IMG_SAMPLE = 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg';
+const CONST_IMG_SAMPLE_RANDOM = 'https://picsum.photos/200';
 
 async function fetchSampleProducts() {
     await fetch("assets/script/product-list-sample.json")
@@ -13,7 +13,7 @@ function populateProductList(products) {
     const locations = ['Huế', 'Hà Nội', 'Tp. Hồ Chí Minh', 'Phú Yên'];
     const locationsCount = locations.length;
 
-    products.forEach(item => {
+    products.forEach( (item, index) => {
         const { title, favorite, discount, priceFrom, priceTo, freeShip, sold, rating, location, img } = item;
         
         // Product element
@@ -37,7 +37,7 @@ function populateProductList(products) {
 
         // Image
         const image = document.createElement('img');
-        image.src = CONST_IMG_SAMPLE;
+        image.src = `${CONST_IMG_SAMPLE_RANDOM}?${index}`; // HACK: Trailing index to request a different random image
         product.appendChild(image);
 
         // Below-image div
@@ -45,13 +45,18 @@ function populateProductList(products) {
         belowImageDiv.classList.add('product-list__product__below-img');
         let priceRandom1 = getRandomIntegerFromTo(5, 200) * 1000;
         let priceRandom2 = getRandomIntegerFromTo(10, 500) * 1000;
+        const onePrice = getRandomIntegerFromTo(0, 1);
         const priceFromRandom = Math.min(priceRandom1, priceRandom2);
         const priceToRandom = Math.max(priceRandom1, priceRandom2);
+        const priceText = 
+            onePrice ? 
+            `₫${formatNumberWithThousandSeparator(priceFromRandom)}` :
+            `₫${formatNumberWithThousandSeparator(priceFromRandom)} - ₫${formatNumberWithThousandSeparator(priceToRandom)}`;
 
         belowImageDiv.innerHTML = `
         <p role="product-list__product__name" class="lorem 50">${title}</p>
         <div>
-            <p class="product-list__product__price">₫${formatNumberWithThousandSeparator(priceFromRandom)} - ₫${formatNumberWithThousandSeparator(priceToRandom)}</p>
+            <p class="product-list__product__price">${priceText}</p>
             <p class="product-list__product__freeship">🚛</p>
         </div>
         <div>
