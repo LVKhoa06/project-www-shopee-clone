@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" media="(max-width: 800px)" href="assets/css/small.css">
+    <link rel="stylesheet" media="(max-width: 520px)" href="assets/css/mini.css">
 </head>
 
-<body class="hide-vertical-scroll-bar">
+<body>
     <div class="big">
         <header class="header">
             <div class="grid">
@@ -103,7 +105,7 @@
                                             alt="">
                                         <div>
                                             <span class="header__top__notify__item__name">
-                                                Xác thực nguồn gốc của sản phẩm 
+                                                Xác thực nguồn gốc của sản phẩm
                                             </span>
                                             <span class="header__top__notify__item__sub-name">
                                                 hahahhahahhahhahhahahhahhahhahah
@@ -266,11 +268,11 @@
 
                 </div>
             </div>
+        </header>
     </div>
-    </header>
 
     <div class="big__content">
-        <div class="big__content__container-left">
+        <div class="big__content__container-left content--none">
             <div class="big__content__container-left__nav">
                 <h3><i class="icon__list fa fa-bars"></i> DANH MỤC</h3>
                 <a class="big__content__container-left__nav-item big__content__container-left__nav-item--border-bottom"
@@ -290,8 +292,8 @@
         </div>
 
         <div class="big__content__container-right">
-            <div class="big__content__container-right__filter">
-                <h3 class="big__content__container-right__filter__heading">
+            <div class="big__content__container-right__filter ">
+                <h3 class="big__content__container-right__filter__heading content--none">
                     Sắp xếp theo
                 </h3>
                 <button class="big__content__container-right__filter__btn btn btn--primary">
@@ -308,19 +310,21 @@
                         class="big__content__container-right__filter__btn big__content__container-right__filter__btn__price btn">
                         <span>Giá</span>
                     </button>
-                    <i class="big__content__container-right__filter__btn__icon fa fa-angle-down"></i>
+                    <i class="big__content__container-right__filter__btn__icon fa fa-angle-down content--none"></i>
                     <div class="big__content__container-right__filter__price__sub">
                         <span>Giá: Thấp đến cao</span>
                         <span>Giá: Cao đến thấp</span>
                     </div>
                 </div>
 
-                <div class="big__content__filter__quantity">
+                <div class="big__content__filter__quantity content--none">
                     <span class="big__content__filter__quantity--pick">1</span>
                     <span class="big__content__filter__quantity--space">/</span>
                     <span class="big__content__filter__quantity--number">10</span>
-                    <button class="big__content__filter__quantity__button__left"><i class="big__content__filter__quantity__icon-left fa fa-angle-left"></i></button>
-                    <button class="big__content__filter__quantity__button__right"><i class="big__content__filter__quantity__icon-right fa fa-angle-right"></i></button>
+                    <button class="big__content__filter__quantity__button__left"><i
+                            class="big__content__filter__quantity__icon-left fa fa-angle-left"></i></button>
+                    <button class="big__content__filter__quantity__button__right"><i
+                            class="big__content__filter__quantity__icon-right fa fa-angle-right"></i></button>
                 </div>
             </div>
 
@@ -363,7 +367,8 @@
 
 
             </div>
-            <div class="big__content__pages-quantity">
+            
+            <div class="big__content__pages-quantity ">
                 <button class="big__content__pages-quantity__item big__content__pages-quantity__icon"><i
                         class="fa fa-angle-left"></i></button>
                 <button class="big__content__pages-quantity__item big__content__pages-quantity__item--select">1</button>
@@ -378,6 +383,7 @@
 
         </div>
     </div>
+    
     <footer class="footer">
         <div class="footer__container__nav">
             <div class="footer__heading">

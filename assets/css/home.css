@@ -1,9 +1,23 @@
+/* Let the product-list-container fills the layout ---------------- START
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .big__content {
-    height: 992px;
+    flex-grow: 1;
+}
+.big-content__product-list {
+    flex-grow: 1;
+}
+/* Let the product-list-container fills the layout ---------------- END */
+
+.big__content {
+    /* height: 2000px; */
     top: 130px;
     width: 96%;
     position: relative;
-    display: inline-flex;
+    display: flex;
 }
 
 .big__content__container-left{
@@ -64,6 +78,7 @@
     background-color: var(--color-white-level1);
     width: 96%;
     border-radius: 2px;
+    max-width: 100%;
 }
 
 .big__content__container-right__filter__heading{
@@ -137,7 +152,10 @@
 }
 
 .big__content__filter__quantity{
-    margin-left: 102px;
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .big__content__filter__quantity span{
@@ -148,13 +166,6 @@
     color: var(--color-app-1st);
 }
 
-.big__content__filter__quantity--space{
-
-}
-
-.big__content__filter__quantity--number{
-
-}
 
 .big__content__filter__quantity button{
     padding: 8px 15px;
@@ -203,11 +214,10 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    transition: top linear;
 }
 
 .product-list__product:hover{
-    top:-5px;
+    box-shadow: 0 1px 4px 0 var(--color-black-level1);
 }
 
 
