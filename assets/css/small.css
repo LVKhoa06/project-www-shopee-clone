@@ -7,7 +7,24 @@
 }
 
 .header__bottom__right__cart{
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 90px;
+    z-index: 1000000;
+}
 
+.header__bottom__right__btn{
+    border-top: 1px solid var(--color-black-level3);
+    margin-top: 20px;
+    padding-top: 0;
+}
+
+.header__bottom__right__cart::before{
+    border-width: 18px 100px;
+    border-color: transparent;
+    top: -35px;
+    right: 43px;
 }
 
 
