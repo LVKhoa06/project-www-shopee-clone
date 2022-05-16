@@ -5,6 +5,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    bottom: 0;
 }
 
 .footer a {
