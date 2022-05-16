@@ -1,5 +1,13 @@
 .header{
-    
+    box-shadow: none;
+}
+
+.header__bottom__left{
+    padding-left: 20px;
+}
+
+.header__bottom__right__cart{
+
 }
 
 
@@ -9,8 +17,8 @@
 }
 
 .big__content__container-right__filter__btn__icon{
-    right: 0;
-    margin-right: -13px;
+    margin-right: calc(100% - 68%);
+    position: relative;
 }
 
 .product-list__product{
@@ -47,9 +55,9 @@
 }
 
 .big__content__container-right__filter__price{
-    display: flex;
-    margin: 0 10px;
     justify-content: center;
+    width: calc(100% / 4 - 4px);
+    padding: 8px 0;
 }
 
 .big__content__container-right__filter__btn__price{
@@ -71,6 +79,18 @@
     background-color: transparent;
     -webkit-tap-highlight-color: transparent;
     color: var(--color-app-1st);
+}
+
+.big__content__container-right__filter__price__sub{
+    top: 100%;
+    width: 140px;
+    margin: 0 ;
+    left: -2px;
+    box-shadow: 0 1px 2px 0 var(--color-black-level2);
+}
+
+.big__content__container-right__filter__price:hover .big__content__container-right__filter__price__sub{
+    background-color: var(--color-white-level0);
 }
 
 

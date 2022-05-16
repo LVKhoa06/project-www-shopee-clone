@@ -2,3 +2,7 @@
     align-items: center;
     flex-direction: column;
 }
+
+.big__content__container-right__filter__price__sub{
+    left: calc(100% / 4 - 80px);
+}
