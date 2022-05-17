@@ -29,11 +29,11 @@
 
 
 
-.big__content{
+.content{
     width: 100%;
 }
 
-.big__content__container-right__filter__btn__icon{
+.content__container-right__filter__btn__icon{
     margin-right: calc(100% - 68%);
     position: relative;
 }
@@ -44,12 +44,12 @@
    
 }
 
-.big-content__product-list{
+.content__product-list{
     margin: 0 0 0 10px ;
     
 }
 
-.big__content__container-right__filter{
+.content__container-right__filter{
     background-color: var(--color-white-level0);
     border-bottom: 1px solid var(--color-black-level3);
     display: inline-flex;
@@ -62,7 +62,7 @@
     width: 100%;
 }
 
-.big__content__container-right__filter__btn, .btn.btn--primary{
+.content__container-right__filter__btn, .btn.btn--primary{
     background-color: var(--color-white-level0);
     color: var(--color-black-level1);
     width: calc(100% / 4 + 5px);
@@ -70,34 +70,45 @@
     margin: 0;
 }
 
-.big__content__container-right__filter__price{
+.content__pagination__item,
+.product-list__product{
+    -webkit-tap-highlight-color: transparent
+}
+
+.btn.btn--primary{
+    color: var(--color-app-1st);
+}
+
+
+
+.content__container-right__filter__price{
     justify-content: center;
     width: calc(100% / 4 - 4px);
     padding: 8px 0;
 }
 
-.big__content__container-right__filter__btn__price{
+.content__container-right__filter__btn__price{
     justify-content: center;
 }
 
-.big__content__container-right__filter__btn__price span{
+.content__container-right__filter__btn__price span{
     margin: 0;
 
 }
 
-.big__content__container-right__filter__btn__price{
+.content__container-right__filter__btn__price{
     margin: 0;
 }
 
 .btn.btn--primary:hover,
-.big__content__container-right__filter__btn:hover,
-.big__content__container-right__filter__price__sub:hover{
+.content__container-right__filter__btn:hover,
+.content__container-right__filter__price__sub:hover{
     background-color: transparent;
     -webkit-tap-highlight-color: transparent;
     color: var(--color-app-1st);
 }
 
-.big__content__container-right__filter__price__sub{
+.content__container-right__filter__price__sub{
     top: 100%;
     width: 140px;
     margin: 0 ;
@@ -105,7 +116,7 @@
     box-shadow: 0 1px 2px 0 var(--color-black-level2);
 }
 
-.big__content__container-right__filter__price:hover .big__content__container-right__filter__price__sub{
+.content__container-right__filter__price:hover .content__container-right__filter__price__sub{
     background-color: var(--color-white-level0);
 }
 

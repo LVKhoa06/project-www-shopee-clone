@@ -9,7 +9,7 @@ async function fetchSampleProducts() {
 } // fetchSampleProducts
 
 function populateProductList(products) {
-    const productListContainer = document.querySelector('.big-content__product-list');
+    const productListContainer = document.querySelector('.content__product-list');
     const locations = ['Huế', 'Hà Nội', 'Tp. Hồ Chí Minh', 'Phú Yên'];
     const locationsCount = locations.length;
 

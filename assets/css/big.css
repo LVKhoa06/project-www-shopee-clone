@@ -2,16 +2,16 @@
     padding-left: 30px;
 }
 
-.big__content{
+.content{
     width: 100%;
 }
 
-.big__content__container-left{
+.content__container-left{
     display: none;
 }
 
 
-.big__content__container-right__filter__btn__price{
+.content__container-right__filter__btn__price{
     width: 140px;
 }
 
@@ -19,11 +19,11 @@
     min-width: 110px;
 }
 
-.big__content__container-right{
+.content__container-right{
     margin: 0 15px;
 }
 
-.big-content__product-list {
+.content__product-list {
     display: flex;
     justify-content: center;
     margin: 0 ;

@@ -329,6 +329,7 @@
     outline: none;
     font-size: 14px;
     border-radius: 2px;
+    overflow: hidden;
 }
 
 .header__bottom__center,
@@ -368,7 +369,7 @@
 .header__bottom__center__history {
     position: absolute;
     background-color: var(--color-white-level0);
-    width: 90%;
+    width: 100%;
     top: calc(100% + 2px);
     box-shadow: 0 1px 4px 0 var(--color-black-level3);
     display: none;
