@@ -11,6 +11,11 @@
     width: calc(100% / 2 - 20px);
 }
 
-.content--none{
+.content--none, .content__mini--none{
     display: none;
 }
+
+.big__content__pagination__item{
+    padding: 2px 12px;
+}
+

@@ -125,7 +125,7 @@ body {
     top: 100%;
     left: 0;
     margin-left: 8px;
-    width: 92%;
+    width: 90%;
     height: 80px;
     background: var(--color-white-level0);
     position: absolute;
@@ -303,17 +303,17 @@ body {
 /* List of products -------------------------------------------------------------------- END */
 
 
-.big__content__pages-quantity{
+.big__content__pagination{
     display: flex;
     justify-content: center;
     
 }
 
-.big__content__pages-quantity__icon{
+.big__content__pagination__icon{
     
 }
 
-.big__content__pages-quantity__item{
+.big__content__pagination__item{
     font-size: 18px;
     padding: 2px 15px;
     margin: 30px 10px;
@@ -324,19 +324,19 @@ body {
     border-radius: 2px;
 }
 
-.big__content__pages-quantity__item--select{
+.big__content__pagination__item--select{
     background-color: var(--color-app-1st);
     color: var(--color-white-level0);
 }
 
-.big__content__pages-quantity__item:hover{
+.big__content__pagination__item:hover{
     color: var(--color-app-1st);
 }
 
-.big__content__pages-quantity__item--select:hover{
+.big__content__pagination__item--select:hover{
     color: var(--color-white-level0);
 }
 
-.big__content__pages-quantity__icon:hover{
+.big__content__pagination__icon:hover{
     color: var(--color-black-level1);
 }

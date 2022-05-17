@@ -1,3 +1,7 @@
+.header__bottom__left{
+    padding-left: 30px;
+}
+
 .big__content{
     width: 100%;
 }
@@ -6,8 +10,13 @@
     display: none;
 }
 
-.big__content__container-right__filter{
-    display: none;
+
+.big__content__container-right__filter__btn__price{
+    width: 140px;
+}
+
+.btn{
+    min-width: 110px;
 }
 
 .big__content__container-right{
