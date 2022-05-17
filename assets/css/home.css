@@ -31,6 +31,7 @@ body {
     padding: 20px;
     margin: 20px;
     border-radius: 2px;
+    min-width: 110px;
 }
 
 .big__content__container-left__nav h3{
@@ -88,6 +89,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     margin-right: 10px;
+    width: 85px;
 }
 
 .big__content__container-right__filter__btn{
@@ -103,7 +105,7 @@ body {
 }
 
 .big__content__container-right__filter__btn__price{
-    width: 180px;
+    width: 150px;
     display: flex;
     justify-content: flex-start;
 }

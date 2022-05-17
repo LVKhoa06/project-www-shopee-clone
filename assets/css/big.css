@@ -1,0 +1,39 @@
+.big__content{
+    width: 100%;
+}
+
+.big__content__container-left{
+    display: none;
+}
+
+.big__content__container-right__filter{
+    display: none;
+}
+
+.big__content__container-right{
+    margin: 0 15px;
+}
+
+.big-content__product-list {
+    display: flex;
+    justify-content: center;
+    margin: 0 ;
+}
+
+.product-list__product{
+    width: calc(100%/4 - 20px);
+    margin: 5px;
+}
+
+.footer__container__nav{
+    width: calc(100%/4 - 10px);
+}
+
+.footer__container__nav__app{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer__app{
+    margin-top: 8px;
+}

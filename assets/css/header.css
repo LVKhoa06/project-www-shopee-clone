@@ -79,6 +79,7 @@
     border-radius: 2px;
     display: none;
     z-index: 2;
+    box-shadow: 0 0 2px -1px var(--color-black-level1);
 }
 
 .header__top__right {

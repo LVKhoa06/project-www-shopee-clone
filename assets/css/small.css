@@ -39,13 +39,12 @@
 }
 
 .product-list__product{
-    width: calc(100% / 2 - 20px);
+    width: calc(100% / 3 - 20px);
     margin: 10px 10px -2px 0px;
    
 }
 
 .big-content__product-list{
-    justify-content: space-between;
     margin: 0 0 0 10px ;
     
 }
