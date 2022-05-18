@@ -52,6 +52,7 @@
 .footer__app__link {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 .footer__app__link img {
     height: 16px;

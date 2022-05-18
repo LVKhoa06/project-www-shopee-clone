@@ -298,7 +298,7 @@
 
 .header__bottom__left {
     width: 150px;
-    padding: 0 8px;
+    margin-left: 25px;
 }
 
 .header__bottom__left__logo__link {

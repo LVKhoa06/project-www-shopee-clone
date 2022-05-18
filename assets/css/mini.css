@@ -8,7 +8,7 @@
 }
 
 .product-list__product{
-    width: calc(100% / 2 - 20px);
+    width: calc(100% / 2 - 10px);
 }
 
 .content--none, .content__mini--none{
