@@ -30,6 +30,7 @@ img {
 html {
     font-family: 'Open Sans', sans-serif; 
     font-size: 12px;
+
 }
 
 body{
@@ -119,7 +120,7 @@ body{
 }
 
 .btn:hover{
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: var(--color-white-level2);
 }
 
 .btn.btn--primary{

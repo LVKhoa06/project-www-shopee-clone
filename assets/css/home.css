@@ -42,7 +42,7 @@
 }
 
 .content__container-left__nav-item--border-bottom{
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid var(--color-white-level1);
     width: 100%;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .content__container-right__filter{
-    display: inline-flex;
+    display: flex;
     align-items: center;
     padding: 20px;
     margin: 20px 0px;
@@ -141,7 +141,7 @@
 
 .content__filter__quantity{
     margin-left: auto;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: flex-end;
 }
