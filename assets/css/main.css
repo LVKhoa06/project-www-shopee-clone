@@ -53,15 +53,6 @@ body{
     margin: 0 auto;
 }
 
-.grid__full-with{
-    width: 100%;
-}
-
-.grid__row{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .modal{
     position: fixed;
     top: 0;
