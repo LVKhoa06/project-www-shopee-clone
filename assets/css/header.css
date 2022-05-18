@@ -8,6 +8,10 @@
     box-shadow: 0 -1px 4px 2px var(--color-black-level2);
 }
 
+.header__search__mobile{
+    display: none;
+}
+
 .header--pointer {
     text-decoration: none;
     color: var(--color-white-level0);
@@ -371,7 +375,7 @@
     background-color: var(--color-white-level0);
     width: 100%;
     top: calc(100% + 2px);
-    box-shadow: 0 1px 4px 0 var(--color-black-level3);
+    box-shadow: 0 1px 3px 0 var(--color-black-level2);
     display: none;
 }
 

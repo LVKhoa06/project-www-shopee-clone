@@ -36,6 +36,20 @@ html {
 body{
     background-color: var(--color-white-level3);
 }
+@keyframes sideIn {
+    from {
+        opacity: 0;
+        top: 60px;
+        transform: scale();
+    }
+
+    to {
+        opacity: 1;
+        top: 90px;
+        transform: scale();
+    }
+}
+
 
 @keyframes growth {
     from {

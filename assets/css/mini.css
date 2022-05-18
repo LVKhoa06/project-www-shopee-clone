@@ -1,20 +1,37 @@
 
 .header__bottom__search {
-    background-color: var(--color-app-1st);
-    justify-content: center;
-}
-
-
-.header__bottom__search__icon {
-    font-size: 25px;
-}
-
-.header__bottom__search input {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 90px;
+    border: 1px solid var(--color-black-level3);
+    border-radius: 0;
+    animation: sideIn linear 0.2s;
     display: none;
 }
 
-.content__container-right__filter__price__sub{
-    
+#search__mobile-checkbox:checked ~ .header__bottom__search{
+    display: flex;
+}
+
+.header__search__mobile{
+    display: block;
+}
+
+.header__search__mobile__icon{
+    font-size: 25px;
+    color: var(--color-white-level0);
+    top: 0;
+    left: 0;
+}
+
+.header__bottom__center{
+    flex-direction: row-reverse;
+}
+
+.header__bottom__center__history{
+    top: calc(100% + 1px);
+    display: block;
 }
 
 .product-list__product{
