@@ -1,10 +1,20 @@
-.footer{
-    align-items: center;
-    flex-direction: column;
+
+.header__bottom__search {
+    background-color: var(--color-app-1st);
+    justify-content: center;
+}
+
+
+.header__bottom__search__icon {
+    font-size: 25px;
+}
+
+.header__bottom__search input {
+    display: none;
 }
 
 .content__container-right__filter__price__sub{
-
+    
 }
 
 .product-list__product{
@@ -19,3 +29,7 @@
     padding: 2px 12px;
 }
 
+.footer{
+    align-items: center;
+    flex-direction: column;
+}
