@@ -279,6 +279,12 @@
     font-size: 1.1rem;
     color: var(--color-app-1st);
 }
+.product-list__product__price.new-price-better::before {
+    content: attr(old-price);
+    margin-right: 3px;
+    text-decoration: line-through;
+    color: var(--color-black-level2);
+}
 
 .product-list__product__freeship {
     display: none;
@@ -349,7 +355,7 @@
     color: var(--color-black-level1);
 }
 
-.content__product-list__link
-{
+.content__product-list__link{
     text-decoration: none;
+    color: var(--color-black-level1);
 }

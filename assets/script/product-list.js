@@ -46,6 +46,7 @@ function populateProductList(products) {
         let priceRandom1 = getRandomIntegerFromTo(5, 200) * 1000;
         let priceRandom2 = getRandomIntegerFromTo(10, 500) * 1000;
         const onePrice = getRandomIntegerFromTo(0, 1);
+        const newPriceBetter = getRandomIntegerFromTo(0, 1) && onePrice;
         const priceFromRandom = Math.min(priceRandom1, priceRandom2);
         const priceToRandom = Math.max(priceRandom1, priceRandom2);
         const priceText = 
@@ -56,7 +57,7 @@ function populateProductList(products) {
         belowImageDiv.innerHTML = `
         <p role="product-list__product__name" class="lorem 50">${title}</p>
         <div>
-            <p class="product-list__product__price">${priceText}</p>
+            <p class="product-list__product__price ${newPriceBetter ? ' new-price-better' : ''}" old-price="₫${newPriceBetter ? formatNumberWithThousandSeparator(priceToRandom) : 0}">${priceText}</p>
             <p class="product-list__product__freeship">🚛</p>
         </div>
         <div>
