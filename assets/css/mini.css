@@ -27,11 +27,21 @@
     display: block;
 }
 
-.header__search__mobile__icon{
+.header__search__mobile__icon::before {
+    content: "\f002";
+}
+#search__mobile-checkbox:checked ~ label>i::before {
+    content: "\f00d";
+    font-weight: 400 !important;
+}
+
+.header__search__mobile__icon
+{
     font-size: 25px;
     color: var(--color-white-level0);
     top: 0;
     left: 0;
+    cursor: pointer;
 }
 
 .header__bottom__center{
@@ -45,6 +55,10 @@
 
 .product-list__product{
     width: calc(100% / 2 - 10px);
+}
+
+.content{
+    
 }
 
 .content--none, .content__mini--none{
