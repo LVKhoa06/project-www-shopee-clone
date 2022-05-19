@@ -523,11 +523,13 @@
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+    width: 100%;
 }
 
 .header__bottom__right__info__top {
     display: flex;
-    width: 385px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .header__bottom__right__info__top h5 {
@@ -536,8 +538,11 @@
     font-weight: 500;
 }
 
+.header__bottom__right__head__info{
+    margin-right: 12px;
+}
+
 .header__bottom__right__head__price {
-    margin-left: calc(100% - 231px);
     color: var(--color-app-1st);
 
 }

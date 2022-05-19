@@ -1,4 +1,13 @@
 
+.header__bottom__right__head__info{
+    
+}
+
+.header__bottom__right__cart {
+    width: 100%;
+    right: 0;
+}
+
 .header__bottom__search {
     position: fixed;
     left: 0;
