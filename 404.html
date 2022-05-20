@@ -1,33 +1,75 @@
-<html><head>
+<html>
+
+<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Shopee clone</title>
 	<link rel="icon" href="./assets/favicon/logo.png">
-<style>
-		#page404{
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+
+		.page404 {
 			position: relative;
 			height: 100%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			flex-direction: column;
+			
 		}
 
-		h1{
+		h1 {
 			position: absolute;
-			font-size: 300px;
-			font-weight: 900;
-			color: rgba(0, 0, 0, 0.06);
+			font-size: 350px;
+			font-weight: 700;
+			color: rgba(250, 111, 61, 0.06);
+			pointer-events: none;
 		}
-		
 
-	</style></head>
-	
+		.page404 p{
+			position: absolute;
+			color: #777;
+			font-size: 17px;
+		}
+		.page404 span{
+			position: absolute;
+			margin-top: 8%;
+			pointer-events: none;
+		}
+
+		.page404 a{
+			font-size: 15px;
+			color: white;
+			text-decoration: none;
+			z-index: 1;
+			background-color: orangered;
+			padding: 15px 40px;
+			border-radius: 3px;
+			text-transform: uppercase;
+			display: flex;
+			margin-top: 23%;
+		}
+
+		.page404 a:hover{
+			opacity: .8;
+		}
+
+	</style>
+</head>
+
 
 <body style="height: auto ; background-color: white;">
-	<div id="page404">
+	<div class="page404">
 		<h1>404</h1>
-		<div class="page404">
-	
-		</div>
+		<p>Trang này không tồn tại </p>
+		<span>👇</span>
+		
+		<a href="./index.html">Trang chủ</a>
 	</div>
 
-</body></html>
+</body>
+
+</html>
