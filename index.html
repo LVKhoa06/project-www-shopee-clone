@@ -166,8 +166,12 @@
                     <input hidden type="checkbox" id="search__mobile-checkbox">
                     <label class="header__search__mobile" for="search__mobile-checkbox">
                         <i class="header__search__mobile__icon fa"></i>
-                        <!--i class="header__search__mobile__icon__close fa fa-search"></i-->
+                        <svg class="header__search__mobile__icon-close" style="cursor: pointer; display: none;" fill="none" stroke="white" viewBox="0 0 24 24" width="25"
+                            stroke="currentColor" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
                     </label>
+
                     <div class="header__bottom__search ">
                         <input type="text" placeholder="Nhập để tìm kiếm sản phẩm">
                         <div class="header__bottom__center__history">
@@ -306,6 +310,7 @@
             </div>
 
             <div class="content__container-right">
+                <input type="checkbox" id="content__container-right__filter--selected" >
                 <div class="content__container-right__filter">
                     <h3 class="content__container-right__filter__heading content--none">
                         Sắp xếp theo
@@ -326,8 +331,8 @@
                         </button>
                         <i class="content__container-right__filter__btn__icon fa fa-angle-down"></i>
                         <div class="content__container-right__filter__price__sub">
-                            <span>Giá: Thấp đến cao</span>
-                            <span>Giá: Cao đến thấp</span>
+                            <span> Thấp đến cao</span>
+                            <span> Cao đến thấp</span>
                         </div>
                     </div>
 

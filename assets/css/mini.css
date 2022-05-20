@@ -26,8 +26,11 @@
 .header__search__mobile__icon::before {
     content: "\f002";
 }
-#search__mobile-checkbox:checked ~ label>i::before {
-    content: "\f00d";
+#search__mobile-checkbox:checked ~ label>i {
+    display: none;
+}
+#search__mobile-checkbox:checked ~ label>.header__search__mobile__icon-close {
+    display: block !important;
 }
 
 .header__search__mobile__icon
@@ -37,6 +40,7 @@
     top: 0;
     left: 0;
     cursor: pointer;
+    font-weight: lighter;
 }
 
 .header__bottom__center{
