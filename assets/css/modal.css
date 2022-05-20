@@ -77,9 +77,9 @@
     border-radius: 0 0 4px 4px;
 }
 
-.btn.btn--primary:hover{
+/* .btn.btn--primary:hover{
     background-color: rgba(238, 77, 45, 0.8);
-}
+} */
 
 .btn--with-icon{
     width: 40%;

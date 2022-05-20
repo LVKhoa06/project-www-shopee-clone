@@ -70,7 +70,7 @@
 }
 
 
-.content__container-right__filter__btn, .btn.btn--primary {
+/* .content__container-right__filter__btn, .btn.btn--primary {
     color: var(--color-black-level1);
     width: calc(100% / 4 - 15px);
     min-width: 0;
@@ -82,7 +82,7 @@
 .btn.btn--primary {
     color: var(--color-white-level0);
     margin-left: 0;
-}
+} */
 
 
 .content__container-right__filter__price {

@@ -166,8 +166,9 @@
                     <input hidden type="checkbox" id="search__mobile-checkbox">
                     <label class="header__search__mobile" for="search__mobile-checkbox">
                         <i class="header__search__mobile__icon fa"></i>
-                        <svg class="header__search__mobile__icon-close" style="cursor: pointer; display: none;" fill="none" stroke="white" viewBox="0 0 24 24" width="25"
-                            stroke="currentColor" stroke-width="3">
+                        <svg class="header__search__mobile__icon-close" style="cursor: pointer; display: none;"
+                            fill="none" stroke="white" viewBox="0 0 24 24" width="25" stroke="currentColor"
+                            stroke-width="3">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </label>
@@ -308,22 +309,29 @@
                     </a>
                 </div>
             </div>
-
-            <div class="content__container-right">
-                <input type="checkbox" id="content__container-right__filter--selected" >
+            <div for="hhh" class="content__container-right">
                 <div class="content__container-right__filter">
                     <h3 class="content__container-right__filter__heading content--none">
                         Sắp xếp theo
                     </h3>
-                    <button class="content__container-right__filter__btn btn btn--primary">
-                        Phổ biến
-                    </button>
-                    <button class="content__container-right__filter__btn btn">
-                        Mới nhất
-                    </button>
-                    <button class="content__container-right__filter__btn btn">
-                        Bán chạy
-                    </button>
+                    <input hidden  type="radio" name="selected" id="content__container-right__filter--selected1">
+                    <label class="content__container-right__filter__btn " for="content__container-right__filter--selected1" >Phổ biến
+                       <!--  <button class="content__container-right__filter__btn btn btn--primary">
+                            Phổ biến
+                        </button> -->
+                    </label>
+                    <input hidden type="radio" name="selected" id="content__container-right__filter--selected2">
+                    <label class="content__container-right__filter__btn " for="content__container-right__filter--selected2"">Mới nhất
+                       <!--  <button class="content__container-right__filter__btn btn">
+                            Mới nhất
+                        </button> -->
+                    </label>
+                    <input hidden type="radio" name="selected" id="content__container-right__filter--selected3">
+                    <label class="content__container-right__filter__btn " for="content__container-right__filter--selected3">Bán chạy
+                       <!--  <button class="content__container-right__filter__btn btn">
+                            Bán chạy
+                        </button> -->
+                    </label>
                     <div class="content__container-right__filter__price">
                         <button
                             class="content__container-right__filter__btn content__container-right__filter__btn__price btn">
