@@ -347,7 +347,7 @@
 }
 
 .content__pagination__item{
-    font-size: 18px;
+    font-size: 17px;
     padding: 2px 15px;
     margin: 30px 10px;
     border: none;
@@ -379,14 +379,8 @@
     color: var(--color-black-level1);
 }
 
-#content__container-right__filter--selected1:checked + label{
-    background-color: var(--color-app-1st);
-    color: var(--color-white-level0);
-}
-#content__container-right__filter--selected2:checked + label{
-    background-color: var(--color-app-1st);
-    color: var(--color-white-level0);
-}
+#content__container-right__filter--selected1:checked + label,
+#content__container-right__filter--selected2:checked + label,
 #content__container-right__filter--selected3:checked + label{
     background-color: var(--color-app-1st);
     color: var(--color-white-level0);
@@ -395,6 +389,17 @@
 .content__container-right__filter__btn:hover{
     opacity: .8;
 }
+
+#content__pagination__item--select1:checked + label,
+#content__pagination__item--select2:checked + label,
+#content__pagination__item--select3:checked + label,
+#content__pagination__item--select4:checked + label,
+#content__pagination__item--select5:checked + label{
+    background-color: var(--color-app-1st);
+    color: var(--color-white-level0);
+}
+
+
 
 .btn__card{
     background-color: var(--color-app-1st) !important;
