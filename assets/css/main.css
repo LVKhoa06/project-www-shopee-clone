@@ -124,9 +124,9 @@ body{
     color: var(--color-black-level1);
 }
 
-.btn:hover{
+/* .btn:hover{
     background-color: var(--color-white-level2);
-}
+} */
 
 .btn.btn--primary{
     color: var(--color-white-level0);
