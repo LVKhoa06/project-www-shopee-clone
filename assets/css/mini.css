@@ -1,8 +1,4 @@
 
-.header__bottom__right__head__info{
-    
-}
-
 .header__bottom__right__cart {
     width: 100%;
     right: 0;
@@ -54,10 +50,6 @@
 
 .product-list__product{
     width: calc(100% / 2 - 10px);
-}
-
-.content{
-    
 }
 
 .content--none, .content__mini--none{
