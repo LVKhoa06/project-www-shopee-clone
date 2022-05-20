@@ -32,7 +32,6 @@
 }
 #search__mobile-checkbox:checked ~ label>i::before {
     content: "\f00d";
-    font-weight: 400 !important;
 }
 
 .header__search__mobile__icon
