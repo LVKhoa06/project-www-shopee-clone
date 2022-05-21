@@ -56,13 +56,17 @@
 }
 
 .auth__form__controls{
-    margin: 50px 0 20px 0;
+    margin: 40px 0 20px 0;
     display: flex;
     justify-content: flex-end;
 }
 
 .btn-back{
     margin-right: 10px;
+}
+
+.auth__form__controls a{
+    text-decoration: none;
 }
 
 .auth__form__socials{

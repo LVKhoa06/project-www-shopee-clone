@@ -66,13 +66,26 @@ body{
     margin: 0 auto;
 }
 
-.modal{
+#modal__login{
+    z-index: 9999;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     display: flex;  
+    display: none;
+}
+
+#modal__logout{
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;  
+    display: none;
 }
 
 .modal__body{ 
@@ -121,9 +134,18 @@ body{
     justify-content: center;
     cursor: pointer;
     color: var(--color-black-level1);
+    line-height: 1;
 }
 
 .btn.btn--primary{
     color: var(--color-white-level0);
     background-color: var(--color-app-1st);
+}
+
+#modal__login:target{
+    display: flex;
+}
+
+#modal__logout:target{
+    display: flex;
 }
