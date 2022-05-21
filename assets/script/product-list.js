@@ -74,3 +74,37 @@ function populateProductList(products) {
 
 fetchSampleProducts();
 
+// Top-pagination -------------------------------------------------------- START
+// 2022.05.21
+const paginationPageCurrentDisplay = document.querySelector('.content__filter__quantity--pick');
+const paginationPagesTotalDisplay = document.querySelector('.content__filter__quantity--number');
+const paginationNavPrev = document.querySelector('.content__filter__quantity__button__left'); paginationNavPrev.onclick = () => paginationPrev();
+const paginationNavNext = document.querySelector('.content__filter__quantity__button__right'); paginationNavNext.onclick = () => paginationNext();
+
+const CONST_PAGINATION_PAGES_TOTAL = 10;
+let paginationPageCurrent = 1;
+
+function paginationNext() {
+    if (paginationPageCurrent < CONST_PAGINATION_PAGES_TOTAL)
+        paginationPageCurrent++;
+
+    paginationDisplay();
+} // paginationNext
+
+function paginationPrev() {
+    if (paginationPageCurrent > 1)
+        paginationPageCurrent--;
+
+    paginationDisplay();
+} // paginationPrev
+
+function paginationDisplay() {
+    paginationNavNext.querySelector('i').style.color = paginationPageCurrent < CONST_PAGINATION_PAGES_TOTAL ? 'black' : 'var(--color-black-level3)';
+    paginationNavNext.style.cursor = paginationPageCurrent < CONST_PAGINATION_PAGES_TOTAL ? 'pointer' : 'no-drop';
+    paginationNavPrev.querySelector('i').style.color = paginationPageCurrent > 1 ? 'black' : 'var(--color-black-level3)';
+    paginationNavPrev.style.cursor = paginationPageCurrent > 1 ? 'pointer' : 'no-drop';
+
+    paginationPageCurrentDisplay.innerText = `${paginationPageCurrent}`;
+    history.pushState(null, null, `/trang/${paginationPageCurrent}`);
+} // paginationDisplay
+// Top-pagination -------------------------------------------------------- START
