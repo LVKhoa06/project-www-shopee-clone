@@ -39,10 +39,6 @@
     right: 0;
 }
 
-.header__bottom__right__btn .btn--primary{
-    width: 95%;
-}
-
 .content {
     width: 100%;
 }
@@ -78,6 +74,10 @@
     min-width: 0;
     margin: 0 5px;
     height: 40px;
+}
+
+.header__bottom__right__btn .btn--primary{
+    width: 95%;
 }
 
 .content__container-right__filter__price {
