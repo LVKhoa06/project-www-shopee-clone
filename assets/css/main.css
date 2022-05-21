@@ -30,7 +30,6 @@ img {
 html {
     font-family: 'Open Sans', sans-serif; 
     font-size: 12px;
-
 }
 
 body{
@@ -123,10 +122,6 @@ body{
     cursor: pointer;
     color: var(--color-black-level1);
 }
-
-/* .btn:hover{
-    background-color: var(--color-white-level2);
-} */
 
 .btn.btn--primary{
     color: var(--color-white-level0);

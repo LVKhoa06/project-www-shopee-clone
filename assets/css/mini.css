@@ -1,9 +1,3 @@
-
-.header__bottom__right__cart {
-    width: 100%;
-    right: 0;
-}
-
 .header__bottom__search {
     position: fixed;
     left: 0;
@@ -52,6 +46,11 @@
     display: block;
 }
 
+.header__bottom__right__cart {
+    width: 100%;
+    right: 0;
+}
+
 .product-list__product{
     width: calc(100% / 2 - 10px);
 }
@@ -63,9 +62,6 @@
 .content__pagination__item{
     padding: 2px 12px;
 }
-
-
-
 
 .footer{
     align-items: center;

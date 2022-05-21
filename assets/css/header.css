@@ -8,10 +8,6 @@
     box-shadow: 0 -1px 4px 2px var(--color-black-level2);
 }
 
-.header__search__mobile{
-    display: none;
-}
-
 .header--pointer {
     text-decoration: none;
     color: var(--color-white-level0);
@@ -35,9 +31,6 @@
     color: var(--color-white-level1);
 }
 
-.header__top__item:hover {
-    color: var(--color-white-level1);
-}
 
 .header__top__item,
 .header__top__icon {
@@ -47,7 +40,15 @@
     padding: 0px 8px 0px 8px;
 }
 
-.header__top__item--qr{
+.header__top__item:hover {
+    color: var(--color-white-level1);
+}
+
+.header__top__item--no-hover:hover {
+    color: var(--color-white-level0);
+}
+
+.header__top__item--qr {
     padding-bottom: 15px;
     cursor: pointer;
 }
@@ -68,10 +69,6 @@
     color: var(--color-app-3rd);
 }
 
-.header__top__item--no-hover:hover {
-    color: var(--color-white-level0);
-}
-
 .header__qr {
     position: absolute;
     height: auto;
@@ -86,13 +83,10 @@
     box-shadow: 0 0 2px -1px var(--color-black-level1);
 }
 
-.header__top__right {
-    display: flex;
-}
-
 .header__top__item--qr:hover .header__qr {
     display: block;
 }
+
 
 .header__qr__img {
     cursor: grab;
@@ -112,6 +106,10 @@
 
 .header__top__item__qr {
     position: relative;
+}
+
+.header__top__right {
+    display: flex;
 }
 
 .header__top__notify {
@@ -138,15 +136,6 @@
     border-color: transparent transparent var(--color-white-level0) transparent;
 }
 
-.header__top__item--has-notify {
-    display: inline-block;
-    position: relative;
-}
-
-.header__top__item--has-notify:hover .header__top__notify {
-    display: block;
-}
-
 @keyframes headerTopNotify {
     from {
         transform: scale(0);
@@ -159,9 +148,18 @@
     }
 }
 
+.header__top__item--has-notify {
+    display: inline-block;
+    position: relative;
+}
+
 .header__top__notify header {
     height: 38px;
     background-color: var(--color-white-level0);
+}
+
+.header__top__item--has-notify:hover .header__top__notify {
+    display: block;
 }
 
 .header__top__notify header h3 {
@@ -173,7 +171,6 @@
     margin-left: 12px;
     user-select: none;
 }
-
 
 .header__top__notify__item--viewed {
     background: rgba(238, 75, 43, 0.1);
@@ -193,7 +190,6 @@
 .header__top__notify__item img {
     width: 50px;
     object-fit: cover;
-
 }
 
 .header__top__notify__item__name {
@@ -246,6 +242,10 @@
     color: var(--color-white-level0);
 }
 
+.header__top__user__name:hover {
+    color: var(--color-black-level3);
+}
+
 .header__top__user__navbar {
     display: flex;
     flex-direction: column;
@@ -268,10 +268,6 @@
     border-width: 10px 15px;
     border-style: solid;
     border-color: transparent transparent var(--color-white-level0) transparent;
-}
-
-.header__top__user__name:hover {
-    color: var(--color-black-level3);
 }
 
 .header__top__user--wrap:hover .header__top__user__navbar {
@@ -502,7 +498,7 @@
     cursor: pointer;
 }
 
-.header__bottom__right__item:hover{
+.header__bottom__right__item:hover {
     background-color: var(--color-white-level2);
 }
 
@@ -510,7 +506,6 @@
     width: 50px;
     object-fit: cover;
     border: 0.5px solid var(--color-black-level3);
-    
 }
 
 .header__bottom__right__info {
@@ -532,21 +527,20 @@
     font-weight: 500;
 }
 
-.header__bottom__right__head__info{
+.header__bottom__right__head__info {
     margin-right: 12px;
 }
 
 .header__bottom__right__head__price {
     color: var(--color-app-1st);
-
 }
 
-.header__bottom__right__head__multiply{
+.header__bottom__right__head__multiply {
     margin: 0 3px;
     font-size: 10px;
 }
 
-.header__bottom__right__head__quantity{
+.header__bottom__right__head__quantity {
     color: var(--color-black-level1);
 }
 
@@ -561,7 +555,7 @@
     justify-content: space-between;
 }
 
-.header__bottom__right__head__description{
+.header__bottom__right__head__description {
     color: var(--color-black-level1);
 }
 
@@ -571,15 +565,18 @@
     font-weight: 500;
 }
 
-
 .header__bottom__right__btn {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 15px;  
+    padding-top: 15px;
 }
 
-.header__bottom__right__btn button{
-    margin-bottom:8px;
+.header__bottom__right__btn button {
+    margin-bottom: 8px;
     width: 96%;
+}
+
+.header__search__mobile {
+    display: none;
 }

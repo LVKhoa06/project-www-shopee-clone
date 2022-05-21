@@ -1,6 +1,3 @@
-.modal{
-    
-}
 
 .auth__form{
     margin: 30px;
@@ -25,8 +22,7 @@
     font-size: 14px;
     color: var(--color-app-1st);
     font-weight: 600;
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
 
 .auth__form__input{
@@ -89,7 +85,6 @@
 .btn--with-icon--fb{
     background-color: #1b74e4;
     color: var(--color-white-level0);
-    
 }
 
 .btn--with-icon--fb:hover{
