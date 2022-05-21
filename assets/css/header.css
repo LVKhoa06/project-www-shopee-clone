@@ -37,7 +37,7 @@
     font-size: 14px;
     color: var(--color-white-level0);
     text-decoration: none;
-    padding: 0px 8px 0px 8px;
+    padding: 0px 7.3px 0px 8px;
 }
 
 .header__top__item:hover {
@@ -65,6 +65,9 @@
 }
 
 .header__top--separate {
+    position: absolute;
+    margin-left: 249px;
+    top: 3px;
     font-size: 16px;
     color: var(--color-app-3rd);
 }
@@ -222,7 +225,7 @@
     color: var(--color-black-level0);
     padding: 6px 150px;
 }
-
+y
 .header__top__user {
     display: inline-flex;
     align-items: center;

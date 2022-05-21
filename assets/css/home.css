@@ -409,7 +409,7 @@
     color: var(--color-white-level0) !important;
 }
 
-.btn.btn--primary {
-    background-color: var(--color-white-level0);
+.content__container-right__filter__btn.btn.btn--primary.content__container-right__filter__btn--primary {
+    background-color: var(--color-white-level0) ;
     color: var(--color-black-level1);
 }
