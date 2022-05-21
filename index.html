@@ -22,6 +22,7 @@
 <body>
     <header class="header">
         <div class="grid">
+            <div id="home"></div>
             <div class="header__top content--none">
                 <div class="header__top__left">
                     <div class="header__top__item header__top__item--qr" href="">
@@ -126,14 +127,14 @@
                         <i class="header__top__icon fa fa-question-circle"></i>
                         Trợ giúp
                     </a>
-                    <!-- <a class="header__top__item" href="">
-                            Đăng kí
-                        </a>
-                        <span class="header__top--separate">|</span>
-                        <a class="header__top__item" href="">
-                            Đăng nhập
-                        </a> -->
-                    <div class="header__top__user--wrap">
+                    <a class="header__top__item" href="#modal__logout">
+                        Đăng kí
+                    </a>
+                    <span class="header__top--separate">|</span>
+                    <a class="header__top__item header__top__login" href="#modal__logout">
+                        Đăng nhập
+                    </a>
+                    <!-- <div class="header__top__user--wrap">
                         <a class="header__top__item header__top__user" href="">
                             <img src="./assets/img/me.jpg"
                                 alt="">
@@ -145,7 +146,7 @@
                                 <span class="header__top__user__navbar__item">Đăng xuất</span>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -309,13 +310,14 @@
                     </a>
                 </div>
             </div>
-            <div for="hhh" class="content__container-right">
+            <divy class="content__container-right">
                 <div class="content__container-right__filter">
                     <h3 class="content__container-right__filter__heading content--none">
                         Sắp xếp theo
                     </h3>
                     <input hidden checked type="radio" name="selected" id="content__container-right__filter--selected1">
-                    <label class="content__container-right__filter__btn btn btn--primary"
+                    <label
+                        class="content__container-right__filter__btn btn btn--primary content__container-right__filter__btn--primary"
                         for="content__container-right__filter--selected1">Phổ biến
                     </label>
                     <input hidden type="radio" name="selected" id="content__container-right__filter--selected2">
@@ -408,7 +410,7 @@
                             class="fa fa-angle-right"></i></button>
                 </div>
 
-            </div>
+            </divy>
         </div>
     </div>
 
@@ -511,14 +513,12 @@
     <script>document.getElementById('id-footer__copyright').innerText = `© ${(new Date()).getFullYear()} - Bản quyền thuộc về KhoaPC`;</script>
 
 
-    <!-- <div class="modal">
-
+    <div id="modal__logout">
         <div class="modal__overlay">
-
+            <a style="display:block; width:100%; height: 100%; cursor: default;" href="#home"></a>
         </div>
-
         <div class="modal__body">
-            <div class="auth__form">
+            <div class="auth__form ">
                 <div class="auth__form__header">
                     <h3 class="auth__form__header__heading">Đăng kí</h3>
                     <span class="auth__form__switch-btn">Đăng nhập</span>
@@ -545,8 +545,12 @@
                     </p>
                 </div>
                 <div class="auth__form__controls">
-                    <button class="btn btn-back">TRỞ LẠI</button>
-                    <button class="btn btn--primary">ĐĂNG KÍ</button>
+                    <a href="#home">
+                        <button class="btn btn-back">TRỞ LẠI</button>
+                    </a>
+                    <a href="">
+                        <button class="btn btn--primary">ĐĂNG KÍ</button>
+                    </a>
                 </div>
             </div>
             <div class="auth__form__socials">
@@ -554,61 +558,67 @@
                     <i class="fa fa-facebook-square auth__form__socials__icon"> </i>
                     Kết nối với Facebook
                 </a>
-    
-                <a href="" class="btn btn--with-icon btn--with-icon--google">
-                    <i class="fa fa-google auth__form__socials__icon"></i>
-                    Kết nối với Google
-                </a>
-            </div>
 
-
-            <div class="auth__form">
-                <div class="auth__form__header">
-                    <h3 class="auth__form__header__heading">Đăng nhập</h3>
-                    <span class="auth__form__switch-btn"> Đăng kí</span>
-                </div>
-
-                <div class="auth__form__form">
-                    <div class="auth__form__group">
-                        <input type="text" class="auth__form__input" placeholder="Nhập email">
-                    </div>
-
-                    <div class="auth__form__group">
-                        <input type="password" class="auth__form__input" placeholder="Mật khẩu">
-                    </div>
-
-                    
-                </div>
-                <div class="auth__form__aside">
-                    <div class="auth__form__help">
-                        <a href="" class="auth__form__help__link auth__form__help__link__forgot">
-                            Quên mật khẩu
-                        </a>
-                        <span class="auth__form__help__space"></span>
-                        <a href="" class="auth__form__help__link auth__form__help__link__help">
-                            Cần trợ giúp?
-                        </a>
-                    </div>
-                </div>
-                <div class="auth__form__controls">
-                    <button class="btn btn-back">TRỞ LẠI</button>
-                    <button class="btn btn--primary">ĐĂNG NHẬP</button>
-                </div>
-            </div>
-            <div class="auth__form__socials">
-                <a href="" class="btn btn--with-icon btn--with-icon--fb">
-                    <i class="fa fa-facebook-square auth__form__socials__icon"> </i>
-                    Kết nối với Facebook
-                </a>
-    
                 <a href="" class="btn btn--with-icon btn--with-icon--google">
                     <i class="fa fa-google auth__form__socials__icon"></i>
                     Kết nối với Google
                 </a>
             </div>
         </div>
-    </div> -->
+        <!-- ----------------------------------------------------------- -->
+        <div id="modal__logout">
+            <div class="modal__body">
+                <div class="auth__form ">
+                    <div class="auth__form__header">
+                        <h3 class="auth__form__header__heading">Đăng nhập</h3>
+                        <span class="auth__form__switch-btn"> Đăng kí</span>
+                    </div>
 
+                    <div class="auth__form__form">
+                        <div class="auth__form__group">
+                            <input type="text" class="auth__form__input" placeholder="Nhập email">
+                        </div>
+
+                        <div class="auth__form__group">
+                            <input type="password" class="auth__form__input" placeholder="Mật khẩu">
+                        </div>
+
+
+                    </div>
+                    <div class="auth__form__aside">
+                        <div class="auth__form__help">
+                            <a href="" class="auth__form__help__link auth__form__help__link__forgot">
+                                Quên mật khẩu
+                            </a>
+                            <span class="auth__form__help__space"></span>
+                            <a href="" class="auth__form__help__link auth__form__help__link__help">
+                                Cần trợ giúp?
+                            </a>
+                        </div>
+                    </div>
+                    <div class="auth__form__controls">
+                        <a class="auth__form__controls__back" href="#home">
+                            <button class="btn btn-back">TRỞ LẠI</button>
+                        </a>
+                        <a href="">
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="auth__form__socials">
+                    <a href="" class="btn btn--with-icon btn--with-icon--fb">
+                        <i class="fa fa-facebook-square auth__form__socials__icon"> </i>
+                        Kết nối với Facebook
+                    </a>
+
+                    <a href="" class="btn btn--with-icon btn--with-icon--google">
+                        <i class="fa fa-google auth__form__socials__icon"></i>
+                        Kết nối với Google
+                    </a>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
