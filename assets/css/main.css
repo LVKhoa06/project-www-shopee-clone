@@ -88,6 +88,14 @@ body{
     display: none;
 }
 
+#modal__login:target{
+    display: flex;
+}
+
+#modal__logout:target{
+    display: flex;
+}
+
 .modal__body{ 
     --growth-from:0.6;
     --growth-to:1;
@@ -142,10 +150,3 @@ body{
     background-color: var(--color-app-1st);
 }
 
-#modal__login:target{
-    display: flex;
-}
-
-#modal__logout:target{
-    display: flex;
-}

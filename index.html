@@ -131,7 +131,7 @@
                         Đăng kí
                     </a>
                     <span class="header__top--separate">|</span>
-                    <a class="header__top__item header__top__login" href="#modal__logout">
+                    <a class="header__top__item header__top__login" href="#modal__login">
                         Đăng nhập
                     </a>
                     <!-- <div class="header__top__user--wrap">
@@ -565,60 +565,64 @@
                 </a>
             </div>
         </div>
-        <!-- ----------------------------------------------------------- -->
-        <div id="modal__logout">
-            <div class="modal__body">
-                <div class="auth__form ">
-                    <div class="auth__form__header">
-                        <h3 class="auth__form__header__heading">Đăng nhập</h3>
-                        <span class="auth__form__switch-btn"> Đăng kí</span>
+    </div>
+    <!-- ----------------------------------------------------------- -->
+    <div id="modal__login">
+        <div class="modal__overlay">
+            <a style="display:block; width:100%; height: 100%; cursor: default;" href="#home"></a>
+        </div>
+        <div class="modal__body">
+            <div class="auth__form ">
+                <div class="auth__form__header">
+                    <h3 class="auth__form__header__heading">Đăng nhập</h3>
+                    <span class="auth__form__switch-btn"> Đăng kí</span>
+                </div>
+
+                <div class="auth__form__form">
+                    <div class="auth__form__group">
+                        <input type="text" class="auth__form__input" placeholder="Nhập email">
                     </div>
 
-                    <div class="auth__form__form">
-                        <div class="auth__form__group">
-                            <input type="text" class="auth__form__input" placeholder="Nhập email">
-                        </div>
-
-                        <div class="auth__form__group">
-                            <input type="password" class="auth__form__input" placeholder="Mật khẩu">
-                        </div>
-
-
+                    <div class="auth__form__group">
+                        <input type="password" class="auth__form__input" placeholder="Mật khẩu">
                     </div>
-                    <div class="auth__form__aside">
-                        <div class="auth__form__help">
-                            <a href="" class="auth__form__help__link auth__form__help__link__forgot">
-                                Quên mật khẩu
-                            </a>
-                            <span class="auth__form__help__space"></span>
-                            <a href="" class="auth__form__help__link auth__form__help__link__help">
-                                Cần trợ giúp?
-                            </a>
-                        </div>
-                    </div>
-                    <div class="auth__form__controls">
-                        <a class="auth__form__controls__back" href="#home">
-                            <button class="btn btn-back">TRỞ LẠI</button>
+
+
+                </div>
+                <div class="auth__form__aside">
+                    <div class="auth__form__help">
+                        <a href="" class="auth__form__help__link auth__form__help__link__forgot">
+                            Quên mật khẩu
                         </a>
-                        <a href="">
-                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        <span class="auth__form__help__space"></span>
+                        <a href="" class="auth__form__help__link auth__form__help__link__help">
+                            Cần trợ giúp?
                         </a>
                     </div>
                 </div>
-
-                <div class="auth__form__socials">
-                    <a href="" class="btn btn--with-icon btn--with-icon--fb">
-                        <i class="fa fa-facebook-square auth__form__socials__icon"> </i>
-                        Kết nối với Facebook
+                <div class="auth__form__controls">
+                    <a class="auth__form__controls__back" href="#home">
+                        <button class="btn btn-back">TRỞ LẠI</button>
                     </a>
-
-                    <a href="" class="btn btn--with-icon btn--with-icon--google">
-                        <i class="fa fa-google auth__form__socials__icon"></i>
-                        Kết nối với Google
+                    <a href="">
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
                     </a>
                 </div>
             </div>
+
+            <div class="auth__form__socials">
+                <a href="" class="btn btn--with-icon btn--with-icon--fb">
+                    <i class="fa fa-facebook-square auth__form__socials__icon"> </i>
+                    Kết nối với Facebook
+                </a>
+
+                <a href="" class="btn btn--with-icon btn--with-icon--google">
+                    <i class="fa fa-google auth__form__socials__icon"></i>
+                    Kết nối với Google
+                </a>
+            </div>
         </div>
+    </div>
 </body>
 
 </html>
