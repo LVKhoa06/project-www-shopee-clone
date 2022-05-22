@@ -1,7 +1,6 @@
 
 .auth__form{
-    margin: 30px;
-    width: 500px;
+    width: 90%;
     height: auto;
     margin: 30px 30px 20px 30px;
 }
@@ -20,6 +19,10 @@
 .auth__form__header__heading{
     font-size: 14px;
     font-weight: 600;
+}
+
+.auth__form__group{
+    width: 100%;
 }
 
 .auth__form__switch-btn{
@@ -67,10 +70,12 @@
 
 .btn-back{
     margin-right: 10px;
+    min-width: 110px;
 }
 
 .auth__form__controls a{
     text-decoration: none;
+    display: contents;
 }
 
 .auth__form__socials{
@@ -81,13 +86,20 @@
     border-radius: 0 0 4px 4px;
 }
 
-.btn.btn--primary-1:hover{
+.btn.btn--primary:hover{
     background-color: rgba(238, 77, 45, 0.8);
+}
+
+.btn--primary__log{
+    background-color: var(--color-app-1st) ;
+    min-width: 110px ;
+    color: var(--color-white-level0) ;
 }
 
 .btn--with-icon{
     width: 40%;
     padding: 0 20px;
+    min-width: 183px !important;
 }
 
 .btn--with-icon--fb{

@@ -105,6 +105,7 @@ body{
     position: relative;
     border-radius: 4px;
     animation: growth linear 0.2s ;
+    min-width: 490px;
 }
 
 .modal__overlay{
