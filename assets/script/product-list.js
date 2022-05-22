@@ -105,6 +105,6 @@ function paginationDisplay() {
     paginationNavPrev.style.cursor = paginationPageCurrent > 1 ? 'pointer' : 'no-drop';
 
     paginationPageCurrentDisplay.innerText = `${paginationPageCurrent}`;
-    history.pushState(null, null, `/trang/${paginationPageCurrent}`);
+    // history.pushState(null, null, `/trang/${paginationPageCurrent}`);
 } // paginationDisplay
 // Top-pagination -------------------------------------------------------- START
