@@ -88,25 +88,35 @@
 }
 
 .auth__form__socials__icon{
-    margin: 0;
+    margin: 0 4px 0 0;
 }
 
 .btn--with-icon{
     font-size: 0;
     min-width: 0px !important;
     padding: 0;
-    width: 60px;
+    width: 200px;
 }
 
-.btn--with-icon--google::before{
-    content: "google";
-    position: absolute;
+.btn--with-icon--google{
+    margin-left: 10px;
+}
+
+.btn--with-icon--fb{
+    margin-right: 10px;
+}
+
+.btn--with-icon--google::after{
+    content: "Google";
+    position: relative;
+    font-size: 12px;
 }
 
 
-.btn--with-icon--facebook::before{
-    content: "facebook";
-    position: absolute;
+.btn--with-icon--fb::after{
+    content: "Facebook";
+    position: relative;
+    font-size: 12px;
 }
 
 
